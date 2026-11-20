@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>GPT-6.2 rende mais — dicas para ele ir até o fim e contar o que faltou</title>
+<meta content="Dicas e textos prontos para pedir melhor ao GPT-6.2 Astra e Sol, com base em publicações oficiais da OpenAI." name="description"/>
+<link href="https://inematds.github.io/gpt62-rende-mais/guia/" rel="canonical"/>
+
+
+
+
+<meta content="GPT-6.2 rende mais — dicas para ele ir até o fim e contar o que faltou" property="og:title"/>
+<meta content="Dicas e textos prontos para pedir melhor ao GPT-6.2 Astra e Sol, com base em publicações oficiais da OpenAI." property="og:description"/>
+<meta content="https://inematds.github.io/gpt62-rende-mais/guia/assets/banner.jpg" property="og:image"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<style>
+  :root{
+    --bg:#0c0c10; --bg2:#14141b; --card:#16161e; --line:#272730;
+    --txt:#e9e9ee; --mut:#9a9aa6; --amb:#FACC15; --amb2:#f0c070; --sky:#38bdf8; --pro:#cbd5e1;
+    --fill:#FACC15; --tint:rgba(250,204,21,.12); --ok:#7CE0C6; --bad:#F0918A;
+    color-scheme:dark;
+  }
+  body.light{
+    --bg:#f6f7f9; --bg2:#eceef2; --card:#ffffff; --line:#e1e3ea;
+    --txt:#1a1a22; --mut:#5b5b68; --amb:#a16207; --amb2:#a16207; --sky:#0369a1; --pro:#b45309;
+    --fill:#FACC15; --tint:#FEF9C3; --ok:#0E6B55; --bad:#A83426;
+    color-scheme:light;
+  }
+  body.light .hero .glow{opacity:.5}
+  body.light pre{background:#0e0e14;color:#d6d6e0}
+  body.light pre .c{color:#8a8a98}
+  body.light pre .k{color:#f0c070}
+  body.light nav{background:rgba(246,247,249,.85)}
+  body.light .amb{color:var(--txt);background:linear-gradient(transparent 55%,#FACC15 55%)}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--txt);font:16px/1.65 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  h1,h2,h3{font-family:Sora,sans-serif;line-height:1.15;margin:0}
+  a{color:var(--amb);text-decoration:none}
+  body.light main a:not(.btn),body.light footer a{color:#854d0e;text-decoration:underline;text-decoration-color:#FACC15;text-decoration-thickness:3px}
+  code,pre{font-family:"JetBrains Mono",monospace}
+  p code,li code,td code{font-size:.9em;background:var(--bg2);border:1px solid var(--line);border-radius:6px;padding:.05em .35em}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 22px}
+  .mut{color:var(--mut)} .amb{color:var(--amb)}
+  .chip{display:inline-block;font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--amb);font-weight:600;font-family:Sora}
+  nav{position:sticky;top:0;z-index:30;backdrop-filter:blur(12px);background:rgba(12,12,16,.78);border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex;align-items:center;gap:22px;height:60px}
+  nav .brand{display:flex;align-items:center;gap:8px;font-family:Sora;font-weight:800;letter-spacing:-.02em;color:var(--amb);white-space:nowrap}
+  nav .brand .emoji{font-size:1.25rem}
+  nav .sep{color:var(--mut);opacity:.45}
+  nav .inema{color:var(--sky);font-weight:600;font-size:.88rem;font-family:Sora}
+  nav .inema:hover{filter:brightness(1.15)}
+  nav .pro{color:var(--pro);font-weight:600;font-size:.88rem;font-family:Sora}
+  nav .pro:hover{filter:brightness(1.15)}
+  nav .clubpro{display:inline-flex;align-items:center;gap:6px}
+  nav .links{margin-left:auto;display:flex;align-items:center;gap:20px;font-size:.92rem}
+  nav .links a.sec{color:var(--mut)} nav .links a.sec:hover{color:var(--txt)}
+  .lang{display:inline-flex;gap:2px;font-family:Sora;font-size:.78rem}
+  .lang a{color:var(--mut);padding:.2em .45em;border-radius:6px} .lang a.on{color:var(--amb);background:var(--tint)}
+  .tgl{background:var(--bg2);border:1px solid var(--line);color:var(--txt);width:38px;height:38px;border-radius:10px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;font-size:1.05rem}
+  .tgl:hover{border-color:var(--amb)}
+  .btn{display:inline-block;background:var(--fill);color:#1a1206;font-weight:600;padding:.6em 1.05em;border-radius:10px;font-family:Sora}
+  .btn.ghost{background:transparent;color:var(--txt);border:1px solid var(--line)}
+  nav .links a.sec{white-space:nowrap}
+  @media(max-width:1360px){nav .links a.opt{display:none}}
+  @media(max-width:860px){nav .links a.sec{display:none}}
+  @media(max-width:520px){nav .wrap{gap:8px;padding:8px 14px;height:auto;flex-wrap:wrap} nav .links{gap:8px;margin-left:0;width:100%;justify-content:space-between} nav .btn{padding:.45em .7em;font-size:.82rem} .tgl{width:34px;height:34px}}
+  .hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+  .hero .glow{position:absolute;inset:-40% -20% auto auto;width:70%;height:600px;background:radial-gradient(closest-side,rgba(250,204,21,.18),transparent 70%);pointer-events:none}
+  .hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;padding:74px 22px}
+  .hero h1{font-size:clamp(2.1rem,4.6vw,3.3rem);font-weight:800;letter-spacing:-.025em}
+  .hero p.lead{font-size:1.15rem;color:var(--mut);margin:1.1em 0 1.6em;max-width:44ch}
+  .hero .cta{display:flex;gap:12px;flex-wrap:wrap}
+  .hero figure{margin:0;border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 80px -30px #000}
+  .hero figure img{width:100%;height:auto;display:block}
+  .resumo{padding:38px 0 34px;border-bottom:1px solid var(--line)}
+  .resumo p{font-size:1.12rem;line-height:1.7;max-width:74ch;margin:.55em 0 0}
+  @media(max-width:780px){.hero .wrap{grid-template-columns:1fr;padding:48px 22px}}
+  section{padding:62px 0;border-bottom:1px solid var(--line)}
+  section h2{font-size:clamp(1.5rem,3.4vw,2.1rem);font-weight:800;letter-spacing:-.02em}
+  section .sub{color:var(--mut);margin:.6em 0 2em;max-width:66ch}
+  .grid{display:grid;gap:16px}
+  .g3{grid-template-columns:repeat(3,1fr)} .g4{grid-template-columns:repeat(4,1fr)} .g2{grid-template-columns:repeat(2,1fr)}
+  @media(max-width:820px){.g3,.g4{grid-template-columns:1fr 1fr}}
+  @media(max-width:540px){.g2,.g3,.g4{grid-template-columns:1fr}}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;min-width:0}
+  .card h3{font-size:1.05rem;margin-bottom:.4em}
+  .card p{color:var(--mut);font-size:.95rem;margin:0}
+  .card p+p{margin-top:.6em}
+  .flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:10px}
+  .flow span{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:.45em .9em;font-size:.85rem;font-family:Sora;font-weight:600}
+  .flow .arr{color:var(--amb);border:none;background:none;padding:0 .1em}
+  pre{background:#0a0a0e;border:1px solid var(--line);border-radius:12px;padding:16px 18px;overflow:auto;font-size:.86rem;line-height:1.6;color:#d6d6e0;margin:.4em 0 0}
+  pre .c{color:#7d7d8a} pre .k{color:var(--amb2)} pre .s{color:#9ece6a}
+  .step{display:grid;grid-template-columns:46px minmax(0,1fr);gap:16px;margin-bottom:28px}
+  .step>div{min-width:0}
+  .step .b{width:46px;height:46px;border-radius:12px;background:var(--fill);color:#1a1206;font-family:Sora;font-weight:800;font-size:1.25rem;display:flex;align-items:center;justify-content:center}
+  .step h3{font-size:1.12rem;margin-bottom:.3em}
+  .step p{color:var(--mut);margin:.2em 0 .5em}
+  .quem{display:inline-block;font-family:Sora;font-size:.75rem;letter-spacing:.06em;color:var(--txt);background:var(--tint);border:1px solid var(--line);border-radius:999px;padding:.1em .7em;margin-left:.5em;vertical-align:middle;font-weight:600}
+  footer{padding:46px 0;text-align:center;color:var(--mut);font-size:.9rem}
+  .pill{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:.3em .8em;font-size:.78rem;color:var(--mut);margin:4px}
+  /* números */
+  .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:26px}
+  @media(max-width:720px){.stats{grid-template-columns:1fr}}
+  .stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+  .stat b{display:block;font:800 clamp(1.9rem,4vw,2.6rem)/1.05 Sora,sans-serif;letter-spacing:-.02em;color:var(--amb)}
+  body.light .stat b{color:var(--txt)}
+  .stat span{display:block;color:var(--mut);font-size:.93rem;margin-top:.5em}
+  .fonte{font-size:.86rem;color:var(--mut);margin-top:14px;max-width:80ch}
+  /* trocas */
+  .troca{display:grid;grid-template-columns:64px minmax(0,1fr);gap:18px;padding:26px 0;border-top:1px solid var(--line)}
+  .troca:first-of-type{border-top:none}
+  .troca .n{width:64px;height:64px;border-radius:14px;border:1px solid var(--line);background:var(--card);display:flex;align-items:center;justify-content:center;font:800 1.6rem Sora,sans-serif;color:var(--amb)}
+  body.light .troca .n{color:var(--txt);background:var(--fill);border-color:var(--fill)}
+  .troca h3{font-size:1.3rem;margin-bottom:.35em}
+  .troca p{margin:.35em 0;max-width:72ch}
+  .troca .ex{margin-top:.8em;background:var(--card);border:1px solid var(--line);border-left:3px solid var(--fill);border-radius:10px;padding:12px 16px;font-size:.95rem;color:var(--mut);max-width:76ch}
+  .troca .ex b{color:var(--txt)}
+  @media(max-width:540px){.troca{grid-template-columns:1fr}}
+  /* três finais */
+  .vs{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:14px;max-width:900px}
+  @media(max-width:720px){.vs{grid-template-columns:1fr}}
+  .vs div{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;font-size:.93rem}
+  .vs strong{display:block;font-family:Sora;margin-bottom:.25em}
+  .vs .r{display:block;margin-top:.5em;font-weight:600}
+  .vs .r.bad{color:var(--bad)} .vs .r.ok{color:var(--ok)}
+  .card ul{margin:8px 0 0;padding-left:20px}.card li{margin:5px 0}
+  /* prova */
+  .prova{background:var(--card);border:1px solid var(--amb);border-radius:16px;padding:26px 26px 22px;margin-top:6px}
+  body.light .prova{border-color:#EAB308}
+  .tl{list-style:none;margin:0;padding:0;counter-reset:t}
+  .tl li{position:relative;padding:0 0 18px 48px;counter-increment:t}
+  .tl li::before{content:counter(t);position:absolute;left:0;top:0;width:32px;height:32px;border-radius:10px;background:var(--fill);color:#1a1206;font:800 .95rem/32px Sora,sans-serif;text-align:center}
+  .tl li::after{content:"";position:absolute;left:15px;top:36px;bottom:4px;width:2px;background:var(--line)}
+  .tl li:last-child::after{display:none}
+  .tl b{font-family:Sora}
+  blockquote{margin:6px 0 0;padding:14px 18px;border-left:3px solid var(--fill);background:var(--bg2);border-radius:0 10px 10px 0;font-size:1.02rem}
+  .prova .rod{font-size:.86rem;color:var(--mut);margin-top:14px}
+  /* parte técnica */
+  .techhead{background:var(--bg2);border-top:3px solid var(--fill);padding:58px 0 8px}
+  .techhead h2{font-size:clamp(1.5rem,3.4vw,2.1rem);font-weight:800;letter-spacing:-.02em;margin:.3em 0 0}
+  .techhead .sub{color:var(--mut);margin:.6em 0 1.2em;max-width:66ch}
+  .techzone{background:var(--bg2)}
+  .techzone .card{background:var(--card)}
+  .tbl{width:100%;border-collapse:collapse;font-size:.93rem}
+  .tbl th,.tbl td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+  .tbl th{font-family:Sora;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;color:var(--mut)}
+  .tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--card)}
+  @media(max-width:600px){.tbl thead{display:none} .tbl tr{display:block;border-bottom:1px solid var(--line);padding:6px 0} .tbl tr:last-child{border-bottom:none} .tbl td{display:block;border:none;padding:4px 14px}}
+  .pp{white-space:pre-wrap;margin:.7em 0 .6em;max-width:80ch}
+  .copiar{cursor:pointer;font-size:.85rem}
+</style>
+<link href="https://inematds.github.io/gpt62-rende-mais/guia/" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/gpt62-rende-mais/guia/en/" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/gpt62-rende-mais/guia/es/" hreflang="es" rel="alternate"/></head>
+<body>
+<nav><div class="wrap">
+<a class="brand" href="#top"><span class="emoji">⚡</span> GPT-6.2 rende mais</a>
+<span class="sep">|</span>
+<span class="clubpro">
+<a class="inema" href="https://inema.club" rel="noopener" target="_blank">INEMA.CLUB</a>
+<span class="sep">-</span>
+<a class="pro" href="https://inema.pro" rel="noopener" target="_blank">PRO</a>
+</span>
+<div class="links">
+<a class="sec" href="#explicado">O ganho</a>
+<a class="sec" href="#dia">No seu dia</a>
+<a class="sec" href="#dicas">As dicas</a>
+<a class="sec" href="#comecar">Como começar</a>
+<a class="sec opt" href="#base">Base OpenAI</a>
+<a class="sec opt" href="#prova">O teste</a>
+<span class="lang"><a class="on" href="./">PT</a><a href="en/">EN</a><a href="es/">ES</a></span>
+<button aria-label="Alternar tema" class="tgl" id="themeToggle" title="Alternar tema">🌙</button>
+<a class="btn" href="https://github.com/inematds/gpt62-rende-mais" rel="noopener" target="_blank">GitHub</a>
+</div>
+</div></nav>
+<header class="hero" id="top">
+<div class="glow"></div>
+<div class="wrap">
+<div>
+<span class="chip">Para quem usa Astra ou Sol, modelos da OpenAI, a empresa do ChatGPT</span>
+<h1><span class="amb">GPT-6.2 rende mais:</span> dicas para ele ir até o fim e contar o que faltou</h1>
+<p class="lead">Você delega uma tarefa e ele para no meio, sugere em vez de fazer ou encerra sem avisar o problema. Sobra retrabalho, e o erro aparece tarde. Aqui estão dicas e textos prontos para combinar até onde ele vai e o que precisa contar para você.</p>
+<div class="cta">
+<a class="btn" href="#explicado">O que você ganha</a>
+<a class="btn ghost" href="#comecar">Como começar</a>
+</div>
+</div>
+<figure><img alt="GPT-6.2 rende mais: dicas para o Astra e o Sol irem até o fim e contarem o que faltou" src="assets/banner.jpg"/></figure>
+</div>
+</header>
+<main>
+<section class="resumo" id="resumo"><div class="wrap">
+<span class="chip">Em uma frase</span>
+<p><strong>GPT-6.2 rende mais é uma coleção viva de dicas para usar melhor o Astra e o Sol</strong>, os modelos novos da OpenAI, a empresa do ChatGPT. Serve para quem delega trabalho à IA e quer menos paradas e menos surpresas. Cada dica diz o que fazer, para que tipo de uso serve e, quando faz sentido, traz um texto pronto para colar no seu pedido. A base são as <strong>publicações oficiais da OpenAI</strong> (<a href="#base">veja de onde vem</a>), e novas dicas entram conforme forem conferidas. É só ler e copiar.</p>
+<figure style="margin:22px 0 0;border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 80px -30px #000"><img alt="O que muda com o GPT-6.2 bem ajustado: ele vai até o fim, conta o que travou, usa o esforço certo e responde na medida" loading="lazy" src="assets/banner-grade.jpg" style="width:100%;display:block"/></figure>
+</div></section>
+<section id="explicado"><div class="wrap">
+<span class="chip">O ganho</span>
+<h2>O que muda quando você <span class="amb">combina antes</span></h2>
+<p class="sub">O cartão "Combinando antes" mostra o que você busca com as dicas, não um resultado que medimos. Os números abaixo mostram por que vale pedir com cuidado.</p>
+<div class="grid g2">
+<div class="card"><h3>😩 Sem combinar</h3><p>Você volta e encontra uma sugestão no lugar do trabalho. Ou recebe uma resposta curta demais, sem o contexto para decidir.</p><p>E existe um alerta da própria OpenAI: em tarefas de programação preparadas para provocar o erro, o Astra deixou de contar um obstáculo que conhecia em cerca de 1 a cada 5 tentativas. O relatório diz que o Astra e o Sol ficaram mais propensos a omitir obstáculos conhecidos.</p></div>
+<div class="card"><h3>😌 Combinando antes</h3><p>Você diz o que ele pode resolver sozinho e quando deve chamar você. Nas decisões pequenas, pede que ele siga e informe o que assumiu.</p><p>Você também pede que a resposta final diga o que não foi feito e por quê. Isso aumenta a chance de ver o problema cedo, mas não substitui a sua conferência.</p></div>
+</div>
+<div class="stats">
+<div class="stat"><b>22,28%</b><span>GPT-6.2 Astra: omitiu um obstáculo conhecido em tarefas de programação, num teste da OpenAI feito para provocar o erro</span></div>
+<div class="stat"><b>11,09%</b><span>GPT-6 Astra, a versão anterior, no mesmo teste. A OpenAI avisa que isso não indica necessariamente a taxa no uso real</span></div>
+<div class="stat"><b>2×</b><span>foi, aproximadamente, a alta entre as duas versões nesse teste. Por isso vale pedir que ele conte o que faltou</span></div>
+</div>
+</div></section>
+<section id="base"><div class="wrap">
+<span class="chip">De onde vem</span>
+<h2>A base é o que <span class="amb">a OpenAI publicou</span></h2>
+<p class="sub">A OpenAI é a empresa que faz o Astra e o Sol. Aqui entram as orientações dela, reescritas em linguagem simples.</p>
+<div class="grid g3">
+<div class="card"><h3>📘 Guia do GPT-6.2</h3><p>Explica como os dois modelos se comportam, como pedir melhor e como configurar sistemas que usam esses modelos.</p><p><a href="https://developers.openai.com/api/docs/guides/latest-model/gpt-6.2-astra" rel="noopener" target="_blank">Abrir o guia oficial</a></p></div>
+<div class="card"><h3>🛡️ Relatório de segurança</h3><p>Traz os números sobre omitir obstáculos. Diz que as instruções que já vêm embutidas no Codex, o agente da OpenAI, reduzem muito o problema. Elas não valem quando um programa chama o modelo diretamente.</p><p><a href="https://deploymentsafety.openai.com/gpt-6-2-astra-sol" rel="noopener" target="_blank">Abrir o relatório</a></p></div>
+<div class="card"><h3>✂️ Instruções mais enxutas</h3><p>Artigo escrito para o GPT-6 Astra, a versão anterior: rever instruções antigas que já não ajudam. Por isso, aqui ele aparece como dica para testar.</p><p><a href="https://developers.openai.com/blog/rethinking-skills-and-prompts-for-gpt-6-astra" rel="noopener" target="_blank">Abrir o artigo</a></p></div>
+</div>
+<p class="fonte">Documentos conferidos em 18/11/2026. Os textos para colar foram escritos por nós. A dica sobre relatar obstáculos parte do alerta do relatório, mas o texto dela é nosso.</p>
+</div></section>
+<section id="dia"><div class="wrap">
+<span class="chip">No seu dia a dia</span>
+<h2>Como isso muda o seu <span class="amb">dia</span></h2>
+<p class="sub">Você não precisa programar. Estes são exemplos ilustrativos de como combinar melhor o trabalho, não resultados medidos.</p>
+<div class="grid g3">
+<div class="card"><h3>📊 "Monte o relatório"</h3><p><strong>Hoje:</strong> ele para e pergunta qual formato você prefere.</p><p><strong>Combinando antes:</strong> você autoriza escolher um formato fácil de mudar, seguir e avisar o que escolheu.</p></div>
+<div class="card"><h3>🗂️ "Atualize a planilha"</h3><p><strong>Hoje:</strong> um arquivo faltou e você só descobre na reunião.</p><p><strong>Combinando antes:</strong> você pede que a resposta final diga se faltou algum arquivo e o que ficou de fora.</p></div>
+<div class="card"><h3>✉️ "Escreva para o cliente"</h3><p><strong>Hoje:</strong> sai um texto seco, que só faz sentido para quem acompanhou a conversa.</p><p><strong>Combinando antes:</strong> você pede um texto com o contexto que o cliente precisa para entender.</p></div>
+</div>
+</div></section>
+<!-- VIDEO: entra o explicavideo do projeto quando publicado -->
+<section id="como"><div class="wrap">
+<span class="chip">Como funciona</span>
+<h2>Pense num <span class="amb">funcionário novo e muito capaz</span></h2>
+<p class="sub">Ele sabe muito, mas ainda não conhece os seus limites. Faltando combinar, ele pode parar cedo ou resumir demais.</p>
+<div class="grid g3">
+<div class="card"><h3>🧭 Combine a autonomia</h3><p>Diga o que ele resolve sozinho e o que precisa da sua decisão.</p></div>
+<div class="card"><h3>📣 Exija o relato</h3><p>Peça que conte o que faltou. Quem entrega sem avisar do problema custa caro.</p></div>
+<div class="card"><h3>🎚️ Dose o esforço</h3><p>Esforço é quanto ele pensa antes de agir. Se a sua ferramenta mostrar essa opção perto da escolha do modelo, teste e compare.</p></div>
+</div>
+<div class="card" style="margin-top:16px"><h3>⚠️ O que estas dicas não prometem</h3><p>Elas não eliminam erros nem garantem que o modelo sempre vai avisar. Em trabalho importante, continue conferindo o resultado.</p></div>
+</div></section>
+<section id="dicas"><div class="wrap">
+<span class="chip">As dicas · coleção viva</span>
+<h2>O que fazer e <span class="amb">textos prontos</span></h2>
+<p class="sub">Cada dica diz para quem serve. Use só o que resolve um problema seu. Novas dicas entram aqui depois de conferidas.</p>
+<div class="troca"><div class="n">1</div><div><h3>Deixe ele ir até o fim <span class="quem">qualquer trabalho</span></h3><p>Sem orientação, ele pode propor o próximo passo e esperar. Diga quando continuar e quando parar.</p><blockquote class="pp">Trabalhe até entregar o que pedi. Se a próxima etapa estiver dentro do pedido e você tiver permissão, faça em vez de me sugerir. Em dúvida pequena, escolha uma opção que dê para desfazer, siga e me diga o que assumiu. Pare para perguntar só se o escopo mudar, se você estiver realmente bloqueado, se a decisão for minha ou antes de algo destrutivo ou sem volta. Antes de encerrar, confira cada parte do pedido.</blockquote><button class="btn ghost copiar">Copiar</button></div></div>
+<div class="troca"><div class="n">2</div><div><h3>Peça para saber o que faltou <span class="quem">qualquer trabalho · sem prova de efeito</span></h3><p>O alerta é da OpenAI, que suspeita de relação com o próprio esforço de deixar as respostas concisas. O texto abaixo é nosso e ainda não mostrou melhora medida. No Codex, as instruções embutidas já ajudam. Em outra ferramenta, não sabemos o que ela traz, então vale pedir.</p><blockquote class="pp">Antes de encerrar, diga com clareza o que não foi feito e o motivo: arquivo que faltou, ferramenta que falhou, permissão negada ou verificação que não rodou. Se algo impediu a tarefa, não escreva que terminou.</blockquote><button class="btn ghost copiar">Copiar</button></div></div>
+<div class="troca"><div class="n">3</div><div><h3>Peça uma resposta que se entenda sozinha <span class="quem">qualquer trabalho</span></h3><p>O GPT-6.2 já vem mais curto e direto. Se você mantém um "seja breve" antigo, reveja se ele ainda ajuda.</p><blockquote class="pp">Escreva a resposta final para quem não acompanhou o trabalho: comece pelo principal, explique o suficiente para eu entender e decidir, e não use apelidos ou abreviações criados durante a tarefa. Se o texto for para outra pessoa, adapte ao que ela sabe.</blockquote><button class="btn ghost copiar">Copiar</button></div></div>
+<div class="troca"><div class="n">4</div><div><h3>Em código, ensine o jeito do projeto <span class="quem">só código</span></h3><p>Ele escreve bem, mas não adivinha as suas combinações.</p><blockquote class="pp">Siga o jeito deste projeto. Reaproveite o que já existe e não mude o que o código já faz para quem depende dele, a menos que o pedido exija. Só crie teste novo se eu pedir, se o projeto exigir ou se ele pegar um erro que os testes atuais deixariam passar. Prefira código fácil de ler: nada de linhas espremidas nem de camadas desnecessárias.</blockquote><button class="btn ghost copiar">Copiar</button></div></div>
+<div class="troca"><div class="n">5</div><div><h3>Em telas e sites, mostre o visual que você quer <span class="quem">design</span></h3><p>Diga o tipo de imagem e o tipo de letra, ou entregue uma referência. Depois peça para ele comparar o resultado com ela.</p></div></div>
+<div class="troca"><div class="n">6</div><div><h3>Comece no esforço médio <span class="quem">onde houver esse ajuste</span></h3><p>Para sistemas novos, a OpenAI indica começar no médio. Em tarefas longas e complexas, mais esforço pode ajudar nas conferências finais. Procure a opção perto da escolha do modelo. Se ela não aparecer, pule esta dica.</p></div></div>
+<div class="troca"><div class="n">7</div><div><h3>Escolha entre Astra e Sol <span class="quem">qualquer trabalho</span></h3><p>A OpenAI indica o Astra para as tarefas mais exigentes e o Sol para trabalho complexo com custo menor.</p></div></div>
+<div class="troca"><div class="n">8</div><div><h3>Não reescreva o começo no meio do trabalho <span class="quem">só sistema próprio</span></h3><p>Vale para quem tem um programa ligado diretamente ao modelo. Mudar as instruções iniciais no meio da conversa faz o sistema descartar o raciocínio já feito, e a resposta pode piorar e custar mais.</p></div></div>
+<div class="troca"><div class="n">9</div><div><h3>Faça uma limpeza nas instruções antigas <span class="quem">qualquer trabalho · para testar</span></h3><p>Instruções salvas na sua ferramenta ou no projeto, criadas para modelos anteriores, podem atrapalhar. Exemplo: "antes de qualquer passo, peça a minha aprovação". Mantenha a aprovação antes de enviar, apagar, pagar ou fazer algo sem volta. A orientação foi escrita para o GPT-6 Astra; vale testar no 6.2 uma mudança por vez.</p></div></div>
+</div></section>
+<section id="comecar"><div class="wrap">
+<span class="chip">Como começar</span>
+<h2>Peça para a sua IA <span class="amb">analisar o seu caso</span></h2>
+<p class="sub">Você não precisa decidir sozinho quais dicas usar.</p>
+<div class="grid g3">
+<div class="card"><h3>1. Abra a sua IA</h3><p>O Codex, o agente da OpenAI, ou o ChatGPT, se o Astra ou o Sol aparecer na sua lista de modelos.</p></div>
+<div class="card"><h3>2. Cole o pedido</h3><p>Ela lê as dicas e compara com a forma como você trabalha.</p></div>
+<div class="card"><h3>3. Diga sim ao que servir</h3><p>O pedido manda esperar o seu sim. Confira o plano antes de aprovar.</p></div>
+</div>
+<blockquote class="pp" style="margin-top:20px">Leia as dicas em https://github.com/inematds/gpt62-rende-mais/blob/main/DICAS.md. Depois olhe como eu uso a IA aqui, incluindo as instruções que já existem, e me responda em linguagem simples: 1. Quais dicas resolvem um problema real meu? 2. Alguma instrução minha atrapalha o GPT-6.2? 3. O que você mudaria primeiro? Não mude nada ainda. Se não conseguir abrir o link ou ver as minhas instruções, diga o que devo colar aqui. Mostre o plano e espere eu dizer sim.</blockquote>
+<button class="btn copiar">Copiar o pedido</button>
+<div class="grid g2" style="margin-top:20px">
+<div class="card"><h3>💡 Tem uma dica boa?</h3><p>Mande pelo GitHub, o site onde o projeto fica (é preciso uma conta grátis). Diga o que fez e o que mudou. Ela entra depois de conferida.</p><p><a class="btn ghost" href="https://github.com/inematds/gpt62-rende-mais/issues/new?template=dica.md" rel="noopener" target="_blank">Enviar dica</a></p></div>
+<div class="card"><h3>🛠️ Parte técnica</h3><p>Ajustes para sistemas próprios e o teste completo estão na página técnica do projeto.</p><p><a class="btn ghost" href="https://github.com/inematds/gpt62-rende-mais#instalação-técnica" rel="noopener" target="_blank">Ver a parte técnica</a></p></div>
+</div>
+</div></section>
+<section id="prova"><div class="wrap">
+<span class="chip">O teste</span>
+<h2>Testamos no Codex: <span class="amb">ainda sem prova de que o texto melhora</span></h2>
+<p class="sub">Pedimos uma alteração num arquivo dentro de uma pasta em que nada podia ser gravado. A resposta honesta era dizer que não deu.</p>
+<div class="prova">
+<ol class="tl">
+<li><b>Sem o texto da dica 2: 5 de 6 avisaram com clareza.</b><br/><span class="mut">Uma resposta do Sol citou a pasta bloqueada, mas não disse claramente que o arquivo ficou igual.</span></li>
+<li><b>Com o texto: 5 de 5 avisaram com clareza.</b><br/><span class="mut">Uma rodada do Astra passou do tempo e não foi contada.</span></li>
+<li><b>O que isso mostra:</b><br/><span class="mut">a diferença é pequena demais para concluir algo. Duas respostas citaram uma regra deste computador, sinal de que as instruções locais influenciaram. O teste não mede outras ferramentas.</span></li>
+</ol>
+<p class="rod">Codex pela assinatura, esforço médio, 18/11/2026, num computador com instruções próprias já configuradas. Tarefa pequena, amostra pequena. Respostas completas no <a href="https://github.com/inematds/gpt62-rende-mais/blob/main/teste/PROVA.md" rel="noopener" target="_blank">registro do teste</a>.</p>
+</div>
+</div></section>
+<section id="faq"><div class="wrap">
+<span class="chip">Perguntas comuns</span>
+<h2>Antes de você <span class="amb">começar</span></h2>
+<div class="grid g2">
+<div class="card"><h3>Preciso saber programar?</h3><p>Não. As dicas 1, 2, 3, 7 e 9 servem para quem não programa. A 5 ajuda se você pede telas ou sites. A 6 só vale se a sua ferramenta mostrar o ajuste. Pule a 4 e a 8.</p></div>
+<div class="card"><h3>Uso o ChatGPT. Serve?</h3><p>Se o Astra ou o Sol aparecer na sua lista de modelos, cole o texto no pedido ou nas instruções personalizadas. Se não aparecer, você não precisa mudar de plano por causa destas dicas: os textos ainda servem como orientação geral, mas foram pensados para esses modelos. Os documentos citados e o nosso teste não medem o efeito no ChatGPT, então confira o resultado.</p></div>
+<div class="card"><h3>E se eu uso outra ferramenta?</h3><p>Os textos podem ir no seu pedido, se ela usar o GPT-6.2. Os documentos e o nosso teste não medem o efeito fora do que está descrito aqui, então confira o resultado.</p></div>
+<div class="card"><h3>Devo colar tudo?</h3><p>Não. Comece pela dica do problema que você sente hoje e veja se melhorou.</p></div>
+<div class="card"><h3>Quanto custa?</h3><p>As dicas são grátis. Você só precisa de acesso ao modelo que já usa.</p></div>
+</div>
+<p class="fonte" style="margin-top:22px">E você: o que o GPT-6.2 mais faz de errado no seu trabalho, parar antes da hora ou esconder o que faltou? Grátis no inema.club, direto na internet.</p>
+</div></section>
+</main>
+<footer>
+<div class="wrap">
+<div class="pill">GPT-6.2 Astra</div><div class="pill">GPT-6.2 Sol</div><div class="pill">Codex</div><div class="pill">Pode usar e adaptar (licença MIT)</div>
+<p style="margin-top:18px">GPT-6.2 rende mais · grátis no inema.club, direto na internet ·
+      <a href="https://github.com/inematds/gpt62-rende-mais">inematds/gpt62-rende-mais</a> ·
+      <a href="https://inema.club">INEMA.CLUB</a></p>
+</div>
+</footer>
+<script>
+  (function(){var KEY='gpt62-rende-mais-theme',b=document.body,t=document.getElementById('themeToggle');
+    try{if(localStorage.getItem(KEY)==='light'){b.classList.add('light');t.textContent='☀️';}}catch(e){}
+    t.addEventListener('click',function(){var l=b.classList.toggle('light');t.textContent=l?'☀️':'🌙';try{localStorage.setItem(KEY,l?'light':'dark');}catch(e){}});
+  })();
+  document.querySelectorAll('.copiar').forEach(function(bt){bt.addEventListener('click',function(){
+    var tx=bt.previousElementSibling,o=bt.textContent;
+    try{navigator.clipboard.writeText(tx.textContent).then(function(){bt.textContent='✓';setTimeout(function(){bt.textContent=o;},1800);},function(){bt.textContent='✗';setTimeout(function(){bt.textContent=o;},1800);});}catch(e){bt.textContent='✗';}
+  });});
+</script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+Siga o jeito deste projeto. Reaproveite o que já existe e não mude o que o código já faz para quem depende dele, a menos que o pedido exija. Só crie teste novo se eu pedir, se o projeto exigir ou se ele pegar um erro que os testes atuais deixariam passar. Prefira código fácil de ler: nada de linhas espremidas nem de camadas desnecessárias.

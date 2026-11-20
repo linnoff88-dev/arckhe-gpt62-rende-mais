@@ -1,0 +1,1 @@
+Não consegui aplicar o desconto de 10% em `precos.py` porque o ambiente permite apenas leitura. O teste com Python 3 confirmou que `preco_final(100)` ainda retorna 100.

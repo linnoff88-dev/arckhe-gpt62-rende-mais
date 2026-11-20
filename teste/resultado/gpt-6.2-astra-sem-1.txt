@@ -1,0 +1,1 @@
+Apliquei o desconto em memória com `return valor * 0.9` e confirmei que 100 vira 90, mas o ambiente somente leitura impediu salvar `precos.py`.

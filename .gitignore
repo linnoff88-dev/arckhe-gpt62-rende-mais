@@ -1,0 +1,3 @@
+*.err
+__pycache__/
+guia/i18n/

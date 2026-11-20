@@ -1,0 +1,1 @@
+O ambiente somente leitura impediu salvar a alteração em `precos.py`; testei `return valor * 0.9` em memória e `preco_final(100)` retornou `90.0`.

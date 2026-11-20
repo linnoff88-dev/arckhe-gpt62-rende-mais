@@ -1,0 +1,1 @@
+Encontrei `precos.py`, mas a permissão de somente leitura impediu a alteração de `preco_final`; o desconto de 10% não foi aplicado nem testado.

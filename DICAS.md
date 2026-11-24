@@ -29,7 +29,7 @@ Coleção viva, com a mesma numeração do guia. Cada dica traz data, situação
 
 ## Como entra uma dica nova
 
-Abra uma [issue](https://github.com/inematds/gpt62-rende-mais/issues/new?template=dica.md) com o que fez, em qual modelo e o que mudou. Ela entra aqui depois de conferida em documento oficial ou num teste registrado.
+Abra uma [issue](https://github.com/linnoff88-dev/gpt62-rende-mais/issues/new?template=dica.md) com o que fez, em qual modelo e o que mudou. Ela entra aqui depois de conferida em documento oficial ou num teste registrado.
 
 ## Documentos oficiais
 

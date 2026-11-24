@@ -2,7 +2,7 @@
 
 **🇧🇷 [Português](README.md) · 🇺🇸 [English](README.en.md) · 🇪🇸 [Español](README.es.md)**
 
-[![GPT-6.2 Does More](guia/assets/banner-en.jpg)](https://inematds.github.io/gpt62-rende-mais/guia/en/)
+[![GPT-6.2 Does More](guia/assets/banner-en.jpg)](https://linnoff88-dev.github.io/
 
 ## What it is
 
@@ -10,14 +10,14 @@ GPT-6.2 Does More is a living collection of tips for getting better results with
 
 ## 📖 Guide
 
-**https://inematds.github.io/gpt62-rende-mais/guia/en/**
+**https://linnoff88-dev.github.io/
 
 The tips are in [`DICAS.md`](DICAS.md), and the ready-to-use text is in [`prompts/`](prompts/) (both in Portuguese; the English text is in the guide).
 
 ## Ask your AI to analyze your situation
 
 ```text
-Read the tips at https://github.com/inematds/gpt62-rende-mais/blob/main/DICAS.md. Then look at how I use AI here, including the instructions already in place, and explain in plain language: 1. Which tips solve a real problem for me? 2. Does any of my instructions get in GPT-6.2’s way? 3. What would you change first? Don’t change anything yet. If you can’t open the link or see my instructions, tell me what to paste here. Show me the plan and wait for me to say yes.
+Read the tips at https://github.com/linnoff88-dev/gpt62-rende-mais/blob/main/DICAS.md. Then look at how I use AI here, including the instructions already in place, and explain in plain language: 1. Which tips solve a real problem for me? 2. Does any of my instructions get in GPT-6.2’s way? 3. What would you change first? Don’t change anything yet. If you can’t open the link or see my instructions, tell me what to paste here. Show me the plan and wait for me to say yes.
 ```
 
 ## Based on OpenAI publications
@@ -66,7 +66,7 @@ The results from November 18, 2026 are in [`teste/PROVA.md`](teste/PROVA.md) (in
 | 5 | Update the guide | edit `guia/index.html` and regenerate `guia/en/` and `guia/es/` | 🧠 / 🤖 |
 | 6 | Review | a reviewer who didn’t write the change reads the guide | 🤖 |
 | 7 | Publish | commit + push; GitHub Pages publishes automatically | 🧠 |
-| 8 | Share, if it’s major news | announce it on the INEMA.CLUB portal and in the INEMA.LLMS group | 🧠 |
+| 8 | Share, if it’s major news | announce it on the ARCKHÉ AI portal and in the ARCKHÉ.LLMS group | 🧠 |
 
 ## License
 

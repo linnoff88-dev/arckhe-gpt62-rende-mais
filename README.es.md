@@ -2,7 +2,7 @@
 
 **🇧🇷 [Português](README.md) · 🇺🇸 [English](README.en.md) · 🇪🇸 [Español](README.es.md)**
 
-[![GPT-6.2 rinde más](guia/assets/banner-es.jpg)](https://inematds.github.io/gpt62-rende-mais/guia/es/)
+[![GPT-6.2 rinde más](guia/assets/banner-es.jpg)](https://linnoff88-dev.github.io/
 
 ## Qué es
 
@@ -10,14 +10,14 @@ GPT-6.2 rinde más es una colección viva de consejos para aprovechar mejor Astr
 
 ## 📖 Guía
 
-**https://inematds.github.io/gpt62-rende-mais/guia/es/**
+**https://linnoff88-dev.github.io/
 
 Los consejos están en [`DICAS.md`](DICAS.md) y los textos listos para usar, en [`prompts/`](prompts/) (ambos en portugués; el texto en español está en la guía).
 
 ## Pídele a tu IA que analice tu caso
 
 ```text
-Lee los consejos en https://github.com/inematds/gpt62-rende-mais/blob/main/DICAS.md. Después revisa cómo uso la IA aquí, incluidas las instrucciones que ya existen, y respóndeme en lenguaje sencillo: 1. ¿Qué consejos resuelven un problema real mío? 2. ¿Alguna instrucción mía dificulta el uso de GPT-6.2? 3. ¿Qué cambiarías primero? Todavía no cambies nada. Si no puedes abrir el enlace o ver mis instrucciones, dime qué debo pegar aquí. Muéstrame el plan y espera a que te diga que sí.
+Lee los consejos en https://github.com/linnoff88-dev/gpt62-rende-mais/blob/main/DICAS.md. Después revisa cómo uso la IA aquí, incluidas las instrucciones que ya existen, y respóndeme en lenguaje sencillo: 1. ¿Qué consejos resuelven un problema real mío? 2. ¿Alguna instrucción mía dificulta el uso de GPT-6.2? 3. ¿Qué cambiarías primero? Todavía no cambies nada. Si no puedes abrir el enlace o ver mis instrucciones, dime qué debo pegar aquí. Muéstrame el plan y espera a que te diga que sí.
 ```
 
 ## Basado en publicaciones de OpenAI
@@ -66,7 +66,7 @@ El resultado del 18/11/2026 está en [`teste/PROVA.md`](teste/PROVA.md) (en port
 | 5 | Actualizar la guía | editar `guia/index.html` y rehacer `guia/en/` y `guia/es/` | 🧠 / 🤖 |
 | 6 | Revisar | un revisor que no haya escrito el cambio lee la guía | 🤖 |
 | 7 | Publicar | commit + push; GitHub Pages publica automáticamente | 🧠 |
-| 8 | Divulgar, si es una novedad importante | avisar en el portal INEMA.CLUB y en el grupo INEMA.LLMS | 🧠 |
+| 8 | Divulgar, si es una novedad importante | avisar en el portal ARCKHÉ AI y en el grupo ARCKHÉ.LLMS | 🧠 |
 
 ## Licencia
 

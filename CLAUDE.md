@@ -2,7 +2,7 @@
 
 Coleção viva de dicas para o GPT-6.2 Astra e Sol. Processo no `README.md`.
 
-- Autor dos commits: `inematds <inematds@gmail.com>`.
+- Autor dos commits: `linnoff88-dev <linnoff88-dev@gmail.com>`.
 - Base pública: só documentos oficiais da OpenAI e testes próprios em `teste/`. **Não citar blogs, vídeos, redes nem pessoas** (Nei, 18/11/2026).
 - Prompts sempre com palavras nossas; não copiar os textos da documentação.
 - Dica nova: `DICAS.md`, guia PT e, depois, EN/ES. Número só com documento conferido.

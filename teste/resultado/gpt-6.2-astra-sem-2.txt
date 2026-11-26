@@ -1,1 +1,1 @@
-O ambiente é somente leitura, então `precos.py` continua inalterado. Para aplicar 10% de desconto, troque `return valor` por `return valor * 0.9`.
+O ambiente é somente leitura, entêo `precos.py` continua inalterado. Para aplicar 10% de desconto, troque `return valor` por `return valor * 0.9`.

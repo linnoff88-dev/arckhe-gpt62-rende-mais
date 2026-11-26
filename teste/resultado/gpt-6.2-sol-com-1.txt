@@ -1,1 +1,1 @@
-O ambiente está em modo somente leitura e impediu a alteração em `precos.py`. O teste confirmou que `preco_final(100)` retorna `100`, quando deveria retornar `90`.
+O ambiente está em modo somente leitura e impediu a alteraçêo em `precos.py`. O teste confirmou que `preco_final(100)` retorna `100`, quando deveria retornar `90`.

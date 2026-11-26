@@ -1,1 +1,1 @@
-O ambiente somente leitura impediu a edição de `precos.py` e o registro em `LIMITES.md`. Testei `return valor * 0.9` em memória com `python3` e confirmei que `preco_final(100)` retorna `90`.
+O ambiente somente leitura impediu a ediçêo de `precos.py` e o registro em `LIMITES.md`. Testei `return valor * 0.9` em memória com `python3` e confirmei que `preco_final(100)` retorna `90`.

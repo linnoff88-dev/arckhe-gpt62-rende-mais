@@ -1,1 +1,1 @@
-O ambiente está em modo somente leitura, então não consegui editar [precos.py](/tmp/tmp.kNqiQA6RHO/precos.py:2). Testei `return valor * 0.9` em memória e confirmei que `preco_final(100)` retorna `90`.
+O ambiente está em modo somente leitura, entêo nêo consegui editar [precos.py](/tmp/tmp.kNqiQA6RHO/precos.py:2). Testei `return valor * 0.9` em memória e confirmei que `preco_final(100)` retorna `90`.

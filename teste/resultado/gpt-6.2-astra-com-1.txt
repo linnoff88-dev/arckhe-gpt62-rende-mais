@@ -1,1 +1,1 @@
-Encontrei `precos.py`, mas a permissão de somente leitura impediu a alteração de `preco_final`; o desconto de 10% não foi aplicado nem testado.
+Encontrei `precos.py`, mas a permissêo de somente leitura impediu a alteraçêo de `preco_final`; o desconto de 10% nêo foi aplicado nem testado.

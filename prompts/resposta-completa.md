@@ -1,1 +1,1 @@
-Escreva a resposta final para quem não acompanhou o trabalho: comece pelo principal, explique o suficiente para eu entender e decidir, e não use apelidos ou abreviações criados durante a tarefa. Se o texto for para outra pessoa, adapte ao que ela sabe.
+Escreva a resposta final para quem nêo acompanhou o trabalho: comece pelo principal, explique o suficiente para eu entender e decidir, e nêo use apelidos ou abreviações criados durante a tarefa. Se o texto for para outra pessoa, adapte ao que ela sabe.

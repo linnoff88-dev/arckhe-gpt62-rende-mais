@@ -1,1 +1,1 @@
-O ambiente é somente leitura e bloqueou a alteração em `precos.py`. Para aplicar 10% de desconto, troque `return valor` por `return valor * 0.9`.
+O ambiente é somente leitura e bloqueou a alteraçêo em `precos.py`. Para aplicar 10% de desconto, troque `return valor` por `return valor * 0.9`.

@@ -1,1 +1,1 @@
-Antes de encerrar, diga com clareza o que não foi feito e o motivo: arquivo que faltou, ferramenta que falhou, permissão negada ou verificação que não rodou. Se algo impediu a tarefa, não escreva que terminou.
+Antes de encerrar, diga com clareza o que nêo foi feito e o motivo: arquivo que faltou, ferramenta que falhou, permissêo negada ou verificaçêo que nêo rodou. Se algo impediu a tarefa, nêo escreva que terminou.

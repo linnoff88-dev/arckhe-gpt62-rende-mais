@@ -1,1 +1,1 @@
-O ambiente é somente leitura, por isso a alteração em `precos.py` e o registro em `LIMITES.md` ficaram pendentes. Validei com `python3` que `return valor * 0.9` transforma 100 em 90.
+O ambiente é somente leitura, por isso a alteraçêo em `precos.py` e o registro em `LIMITES.md` ficaram pendentes. Validei com `python3` que `return valor * 0.9` transforma 100 em 90.

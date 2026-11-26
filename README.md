@@ -8,7 +8,7 @@
 
 **ê°Å¸â¡Â§ê°Å¸â¡Â· [PortuguêÂªs](README.md) êÂ· ê°Å¸â¡Âºê°Å¸â¡Â¸ [English](README.en.md) êÂ· ê°Å¸â¡Âªê°Å¸â¡Â¸ [EspaêÂ±ol](README.es.md)**
 
-[![GPT-6.2 rende mais](guia/assets/banner.jpg)](https://inematds.github.io/gpt62-rende-mais/guia/)
+[![GPT-6.2 rende mais](guia/assets/banner.jpg)](https://linnoff88-dev.github.io/arckhe-/guia/)
 
 ## O que êÂ©
 
@@ -16,14 +16,14 @@ GPT-6.2 rende mais êÂ© uma coleêÂ§êÂ£o viva de dicas para usar me
 
 ## ê°Å¸ââ Guia
 
-**https://inematds.github.io/gpt62-rende-mais/guia/**
+**https://linnoff88-dev.github.io/arckhe-/guia/**
 
 As dicas estêÂ£o em [`DICAS.md`](DICAS.md) e os textos prontos, em [`prompts/`](prompts/).
 
 ## PeêÂ§a para a sua IA analisar o seu caso
 
 ```text
-Leia as dicas em https://github.com/inematds/gpt62-rende-mais/blob/main/DICAS.md. Depois olhe como eu uso a IA aqui, incluindo as instruêÂ§êÂµes que jêÂ¡ existem, e me responda em linguagem simples: 1. Quais dicas resolvem um problema real meu? 2. Alguma instruêÂ§êÂ£o minha atrapalha o GPT-6.2? 3. O que vocêÂª mudaria primeiro? NêÂ£o mude nada ainda. Se nêÂ£o conseguir abrir o link ou ver as minhas instruêÂ§êÂµes, diga o que devo colar aqui. Mostre o plano e espere eu dizer sim.
+Leia as dicas em https://github.com/linnoff88-dev/gpt62-rende-mais/blob/main/DICAS.md. Depois olhe como eu uso a IA aqui, incluindo as instruêÂ§êÂµes que jêÂ¡ existem, e me responda em linguagem simples: 1. Quais dicas resolvem um problema real meu? 2. Alguma instruêÂ§êÂ£o minha atrapalha o GPT-6.2? 3. O que vocêÂª mudaria primeiro? NêÂ£o mude nada ainda. Se nêÂ£o conseguir abrir o link ou ver as minhas instruêÂ§êÂµes, diga o que devo colar aqui. Mostre o plano e espere eu dizer sim.
 ```
 
 ## Baseado em publicaêÂ§êÂµes da OpenAI
@@ -72,7 +72,7 @@ O resultado de 18/11/2026 estêÂ¡ em [`teste/PROVA.md`](teste/PROVA.md).
 | 5 | Atualizar o guia | editar `guia/index.html` e refazer `guia/en/` e `guia/es/` | ê°Å¸Â§Â  / ê°Å¸Â¤â |
 | 6 | Revisar | um revisor que nêÂ£o escreveu a mudanêÂ§a lêÂª o guia | ê°Å¸Â¤â |
 | 7 | Publicar | commit + push; o GitHub Pages publica sozinho | ê°Å¸Â§Â  |
-| 8 | Divulgar, se for novidade grande | avisar no portal INEMA.CLUB e no grupo INEMA.LLMS | ê°Å¸Â§Â  |
+| 8 | Divulgar, se for novidade grande | avisar no portal ARCKHÉ AI e no grupo ARCKHÉ.LLMS | ê°Å¸Â§Â  |
 
 ## LicenêÂ§a
 
